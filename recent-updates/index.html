@@ -6,8 +6,8 @@
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
     <meta name="description" content="最近更新列表" />
     <meta name="hexo-theme-A4" content="v1.9.6" />
-    <link rel="alternate icon" type="image/webp" href="/img/favicon.webp">
-    <title>Hexo</title>
+    <link rel="alternate icon" type="image/webp" href="/img/%E8%91%A3%E4%BA%91%E9%9C%9E.jpg">
+    <title>董律师的简历</title>
 
     
         
@@ -50,10 +50,6 @@
     
 
     
-        
-<link rel="stylesheet" href="/css/returnToLastPage.css">
-
-    
     
    
 <link rel="stylesheet" href="/css/lightgallery-bundle.min.css">
@@ -62,6 +58,11 @@
 <meta name="generator" content="Hexo 7.3.0"></head>
     
     
+        <style>
+            .index-main{
+                max-width:  880px;
+            }
+        </style>
 
     
     
@@ -119,7 +120,19 @@
                 height: auto;
                 object-fit: cover; /* 保持图片比例 */
                 transition: transform 0.3s ease-in-out; 
-                border-radius: 0; 
+                border-radius: 50%; 
+            }
+            
+            .header-img:hover {
+                animation: rotateAnimation 2s linear infinite; /* 悬停旋转动画 */
+            }
+            @keyframes rotateAnimation {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
             }
             
         </style>
@@ -127,10 +140,10 @@
             alt="^-^" 
             cache-control="max-age=86400" 
             class="header-img" 
-            src="/img/favicon.webp" 
+            src="/img/%E8%91%A3%E4%BA%91%E9%9C%9E.jpg" 
         />
         <div class="header-content">
-            <a class="logo" href="/">Hexo</a> 
+            <a class="logo" href="/">董律师的简历</a> 
             <span class="description"></span> 
         </div>
     </div>
@@ -168,6 +181,16 @@
         
             
             <li>
+              <span class="archive-date">&nbsp;&nbsp;&nbsp;2024/12/04 
+              </span>
+              <div class="archive-main">
+                
+                  <a class="archive-title" href="/2024/12/04/index/">index</a>
+              </div>
+            </li>
+        
+            
+            <li>
               <span class="archive-date">&nbsp;&nbsp;&nbsp;2024/12/03 
               </span>
               <div class="archive-main">
@@ -184,6 +207,11 @@
             © 1949-2024 China 
 
             
+                
+
+            
+                
+                    / <a href="/contact/"> 联系 </a>
                 
 
             
@@ -297,13 +325,6 @@
                     </svg>
                 </div>
             
-            
-                <!-- 返回的按钮-->  
-                <div class="return-to-last-progress-wrap shadow-drop-2-bottom">
-                    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-                        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
-                    </svg>
-                </div>
             
     </body>
 </html>
